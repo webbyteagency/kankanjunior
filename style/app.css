@@ -1,0 +1,117 @@
+/* By WebByte Agency 👽👨‍💻❤️👌 */
+
+/* Windows */
+*{font-family: var(--font);scroll-behavior: smooth;}
+*::selection{background-color: var(--hover);color: var(--bg);}
+html{scroll-behavior: smooth;}
+
+/* Body and Scrollbar */
+body{background-color: var(--color);scroll-behavior: smooth;animation:fadeIn 1s;color:var(--bg)}
+body::-webkit-scrollbar 
+{
+    background-color: var(--white);
+    border-radius: 50px;
+    width: 12px;
+    padding: 3em;
+    display: none;
+}
+
+/* Load */
+.load 
+{
+    background-color: #fff;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0s ease-in 0.9s;
+}
+.load .loader img 
+{
+    animation: zoomIn 1s;
+}
+
+/* nav */
+nav{padding-top: 0px;background:var(--bg);}
+nav ul li a{transition: var(--t);font-size: var(--p);}
+nav ul li a:hover{font-weight: bold;}
+nav #whatsapp
+{
+    background-color: var(--hover);
+    color: var(--bg);
+    padding: 7px;
+    border-radius: var(--radius);
+    animation: zoomIn 1s infinite;
+}
+
+/* Presentation(Header) */
+#header
+{
+    background-color: var(--bg);
+    height: 700px;
+    padding-top: 100px;
+}
+#title
+{
+    font-weight: bold;
+    font-family: Montserrat;
+    color: var(--white);
+}
+
+/* Company Logo */
+#logo img
+{
+    filter: grayscale(90%);
+    -webkit-filter: grayscale(90%);
+    cursor: pointer;
+    transition: var(--t);
+}
+#logo img:hover
+{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    cursor: pointer;
+    transition: var(--t);
+}
+
+/* Projects section */
+.sections
+{
+    padding-top: 190px;
+    padding-bottom: 190px;
+}
+section h2
+{
+    line-height: 1.2;
+}
+section img
+{
+    cursor: pointer;
+    filter: grayscale(10%);
+    -webkit-filter: grayscale(10%);
+    transition: var(--t);
+}
+section img:hover
+{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    opacity: 0.8;
+}
+.dark{background-color:var(--bg);color: #fff;}
+.light{background-color:var(--white);}
+.network a{margin: 15px;}
+
+
+/* Form */
+form input,
+form textarea
+{
+    border: 0.7px solid #000;
+    border-radius: 1px;
+    outline: none;
+}
